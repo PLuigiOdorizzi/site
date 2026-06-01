@@ -26,7 +26,8 @@
     <section id="sobre-mim"> <!-- seção sobre mim, id para linkar no menu -->
         <h2>Sobre Mim</h2>
 
-        <img src="" alt="Foto de Pietro" title="Foto de Pietro"> <!-- exemplo de imagem, pode ser uma foto minha, colocar depois, alt é abreviação de alternativa, caso não consiga carregar a imagem -->
+        <img src="" alt="Foto de Pietro" title="Foto de Pietro">
+        <!-- exemplo de imagem, pode ser uma foto minha, colocar depois, alt é abreviação de alternativa, caso não consiga carregar a imagem -->
 
         <article>
 
@@ -68,20 +69,47 @@
     <section id="contato"> <!-- seção de contato, id para linkar no menu -->
         <h2>Contato</h2>
 
-            <p>Tem um projeto em mente? Vamos conversar!</p>
+        <p>Tem um projeto em mente? Vamos conversar!</p>
 
-            <address>
-                E-mail: <a href="mailto:pietro@email.com">pietro@email.com</a> <br>
-                LinkedIn: <a href="https://www.linkedin.com/in/pietro" target="_blank">linkedin.com/in/pietro</a> <br>
-                GitHub: <a href="https://github.com/pietro" target="_blank">github.com/pietro</a><br>
-                Telefone: <a href="tel:+551112345678">(11) 1234-5678</a>
-            </address>
+        <address>
+            E-mail: <a href="mailto:pietro@email.com">pietro@email.com</a> <br>
+            LinkedIn: <a href="https://www.linkedin.com/in/pietro" target="_blank">linkedin.com/in/pietro</a> <br>
+            GitHub: <a href="https://github.com/pietro" target="_blank">github.com/pietro</a><br>
+            Telefone: <a href="tel:+551112345678">(11) 1234-5678</a>
+        </address>
+        <form action="">
 
-        </section>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" name="telefone" required><br>
+
+            <label for="mensagem">Mensagem: </label><br>
+            <select name="assunto" id="assunto">
+                <option value="orcamento">Orçamento</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outros">Outros assuntos</option>
+            </select>
+            <br>
+
+            <label for="mensagem">Mensagem: </label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="20" required></textarea><br>
+
+            <input type="checkbox" id="inscricao" name="inscricao" value="Enviar">
+            <label for="inscricao">Quer se inscrever para receber novidades</label><br>
+
+            <input type="submit" value="Enviar mensagem">
+
+        </form>
+
+    </section>
     </footer>
 </body>
 
 </html>
 
 <!-- ex de tags <tag (atributo)>("valor")conteudo</tag>, sempre precisa estar fechado, ter tag de abertura e fechamento. -->
-
